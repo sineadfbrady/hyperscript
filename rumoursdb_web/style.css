@@ -137,6 +137,11 @@ pre {
 	font-weight: 300;
 	color: #666;
 	font-family: 'Roboto Condensed', sans-serif;
+ white-space: pre-wrap;       /* css-3 */
+ white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+ white-space: -pre-wrap;      /* Opera 4-6 */
+ white-space: -o-pre-wrap;    /* Opera 7 */
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 code {
 	font-size: 1.1em;
@@ -278,19 +283,48 @@ li {
 }
 
 /*style suggestion for code area*/
-.codearea {
-	background-image: url(box_pattern2.png);
-	padding: 10px;
-}
-
+/*suggestion 1*/
 .codebox {
 	border:1px solid #cccccc;
 	border-radius: 5px;
 	-moz-border-radius: 5px;
-	background-color: #ffffff;
-	margin: 20px;
+	background-color: #d2e3f7;
+	margin: 20px 0 20px 0;
 	font-size: 0.9em;
-	padding: 20px 20px 20px 50px;
+	padding: 20px 30px 20px 30px;
+}
+/*suggestion 2*/
+.codebox2 {
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	background-color: #bfd3ef;
+	margin: 20px 0 20px 0;
+	font-size: 0.9em;
+	padding: 20px 30px 20px 30px;
+}
+
+/*suggestion 3*/
+.codebox3 {
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	background-color: #cccccc;
+	margin: 20px 0 20px 0;
+	font-size: 0.9em;
+	padding: 20px 30px 20px 30px;
+}
+/*suggestion 4*/
+.codebox4 {
+	border:1px solid #cccccc;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	background-color: #ffffff;
+	margin: 20px 0 20px 0;
+	font-size: 0.9em;
+	padding: 20px 30px 20px 30px;
+}
+
+.color1 {
+	color: #000000;
 }
 
 /*Style guidelines for a container with round corners and a 1px border*/
